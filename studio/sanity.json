@@ -20,7 +20,7 @@
     "@sanity/code-input",
     "@sanity/studio-hints"
   ],
-  "parts": [
+   "parts": [
     {
       "name": "part:@sanity/base/schema",
       "path": "./schemas/schema.js"
@@ -32,6 +32,10 @@
     {
       "implements": "part:@sanity/dashboard/config",
       "path": "dashboardConfig.js"
+    },
+    {
+      "implements": "part:@sanity/default-layout/studio-hints-config",
+      "path": "./studioHintsConfig.js"
     }
   ]
 }
